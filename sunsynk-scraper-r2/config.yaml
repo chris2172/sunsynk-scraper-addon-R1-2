@@ -1,6 +1,6 @@
 name: "Sunsynk Scraper R2"
 description: "Scrapes the SunSynk Region 2 / inteless API for data on your solar setup!"
-version: "0.0.12"
+version: "0.0.13"
 slug: "sunsynk-scraper-r2"
 init: false
 arch:
