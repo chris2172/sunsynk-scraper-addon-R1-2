@@ -78,11 +78,13 @@ class RequestClient():
     def get_monthly_readings(self):
         path = endpoints.get_month_readings_endpoint(credentials.my_plant_id, datetime.date.today())
         response = self.get(path)
+        logging.debug(f"Got Monthly Readings: " + response ) # New 17-12-2023-22:53
         return response.json()
 
     def get_power_readings(self):
         path = endpoints.get_flow_chart_endpoint(credentials.my_plant_id, datetime.date.today())
         response = self.get(path)
+        logging.debug(f"Got Power Readings: " + response ) # New 17-12-2023-22:53
         return response.json()
 
 
