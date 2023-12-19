@@ -143,7 +143,7 @@ async def main():
                     logging.error("Error getting data from Sunsynk API: " + str(e))
                     continue
                 publish_state_updates(mqttClient, energy_data, power_data, sensors)
-                logging.info("Published data to Home Assistant for region " + credentials.sunsynk_region)
+                logging.info("Published data to Home Assistant for region " + print(credentials.sunsynk_region))
                 await asyncio.sleep(config.UPDATE_INTERVAL)
     except Exception as e:
         logging.exception(e, exc_info=configuration.DEBUG_LOGGING)
