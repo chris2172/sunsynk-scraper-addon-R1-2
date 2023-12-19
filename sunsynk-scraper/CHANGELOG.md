@@ -1,4 +1,4 @@
-## 0.1.08
+## 0.1.09
 
 Add region details into loggind
 
