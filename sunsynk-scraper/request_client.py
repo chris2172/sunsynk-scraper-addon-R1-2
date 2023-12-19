@@ -96,12 +96,10 @@ class RequestClient():
 
     def get_power_readings(self):
         if credentials.sunsynk_region == 1:
-            logging.info("Region 1 Selected: Getting Data ")
             path = endpoints.get_flow_chart_endpoint(credentials.my_plant_id, datetime.date.today())
             response = self.get(path)
             return response.json()
         else:
-            logging.info("Region 2 Selected: Getting Data ")
             path = endpoints.get_flow_chart_endpoint_r2(credentials.my_plant_id, datetime.date.today())
             response = self.get(path)
             return response.json()
