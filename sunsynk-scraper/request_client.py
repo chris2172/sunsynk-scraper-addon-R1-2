@@ -64,8 +64,8 @@ class RequestClient():
         for d in plant_id_and_pac:
             logging.debug(d)
             target_plant_id = d['id']
-            logging.debug('Your plant id is: ' + str(target_plant_id))
-            logging.debug('****************************************************')
+            logging.info('Your plant id is: ' + str(target_plant_id))
+            logging.info('****************************************************')
             return target_plant_id
 
     def get(self, path, is_retry=False):

@@ -1,6 +1,6 @@
 name: "Sunsynk Scraper"
 description: "Scrapes the SunSynk Region 1 & 2 / inteless API for data on your solar setup!"
-version: "0.1.04"
+version: "0.1.05"
 slug: "sunsynk-scraper"
 init: false
 arch:
